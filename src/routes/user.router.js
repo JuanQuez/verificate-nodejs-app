@@ -12,7 +12,7 @@ userRouter.route('/verify/:id')
     .get(verifyCode);
 
 userRouter.route('/login')
-    .post(verifyJWT, login);
+    .post(login);
 
 userRouter.route('/me')
     .get(verifyJWT, loggedUser)
